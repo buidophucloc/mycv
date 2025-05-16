@@ -127,27 +127,42 @@ body {
 /* --- SLIDER CSS --- */
 #slider {
   margin: 30px auto;
-  max-width: 100%;        /* Đảm bảo slider chiếm toàn bộ chiều ngang */
-  height: 500px;          /* Chiều cao mong muốn */
+  width: 100%;
+  height: auto;
   position: relative;
-  overflow: hidden;       /* Giới hạn phần tràn */
+  overflow: hidden;
 }
 
 .slides {
-  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .slides img {
   width: 100%;
-  height: 100%;           /* Đảm bảo ảnh phủ hết chiều cao */
-  object-fit: cover;      /* Ảnh không bị méo, lấp đầy khung */
+  height: auto;
+  object-fit: contain;
   display: none;
+  transition: transform 0.3s ease;
 }
 
 .slides img.active {
   display: block;
 }
 
+/* Zoom hỗ trợ cho mobile (pinch-to-zoom) */
+@media (max-width: 768px) {
+  #slider {
+    touch-action: pan-y;
+  }
+
+  .slides img {
+    touch-action: pinch-zoom;
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .prev,
 .next {
