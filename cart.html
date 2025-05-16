@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="icon" href="img/Logo1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header và thanh tìm kiếm -->
+  <section id="header">
+    <a href="S1.html"><img src="img/Logo1.png" class="logo" style="width: 50%;"></a>
+
+    <form class="search-box" action="#" method="GET">
+      <input type="text" placeholder="">
+      <button type="submit">Tìm kiếm</button>
+    </form>
+    <div>
+      <ul id="navbar">    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="dangnhap.html">Đăng Nhập</a></li>
+        <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Giỏ hàng -->
+<section class="cart-container">
+  <div class="cart-left">
+    <h2>Giỏ hàng</h2>
+    <p id="cart-count">Bạn đang có 0 sản phẩm trong giỏ hàng</p>
+    <hr>
+    <div id="cart-items" class="cart-items">
+      <!-- Sản phẩm sẽ được thêm bằng JS -->
+    </div>
+  </div>
+  <div class="cart-right">
+    <h2>Thông tin đơn hàng</h2>
+    <hr>
+    <p class="total-label">Tổng tiền:</p>
+    <p class="total-price"><span id="total-price">0</span> đ</p>
+    <button class="checkout-btn">Thanh toán</button>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer style="background-color: #fff; padding: 40px 80px; border-top: 1px solid #ccc; font-family: 'Poppins', sans-serif;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+      <div style="flex: 1; min-width: 250px;">
+        <img src="img/Logo1.png" alt="Lộc Store" style="width: 180px; margin-bottom: 10px;">
+        <p>Lộc Store đồ án website bán điện thoại cuối kì môn học thực hành nhập môn web</p>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="margin-bottom: 10px;">Thông tin</h3>
+        <p>Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP Hồ Chí Minh</p>
+        <p>Email: DH52200991@student.stu.edu.vn</p>
+        <p>Điện thoại: 0774197152</p>
+      </div>
+      <div style="flex: 1; min-width: 300px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.219009152515!2d106.67787431533477!3d10.74651006262995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed1db80c5d9%3A0xe262f3a21e31a0b3!2zVHLGsOG7nW5nIMSQ4bqhaSBob2MgQ8O0bmcgbmdo4buHIFPhuqd1!5e0!3m2!1svi!2s!4v1628153036556!5m2!1svi!2s"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+    <p style="text-align: center;">Họ và tên: Bùi Đỗ Phúc Lộc | MSSV: DH52200991 | Lớp: D222_TH05 | Nhóm 12 | Thứ 3 Ca 4</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <a href="#" style="position: fixed; bottom: 20px; right: 20px; background: #0baf3c; color: white; padding: 10px 12px; border-radius: 50%; font-size: 20px; text-align: center; text-decoration: none;"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
