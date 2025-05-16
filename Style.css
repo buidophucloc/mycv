@@ -164,6 +164,7 @@ body {
   }
 }
 
+
 .prev,
 .next {
   position: absolute;
@@ -355,7 +356,7 @@ body {
 }
 
 .bonus {
-  color: green;
+  color: #d87925;
   font-size: 13px;
   margin-top: 5px;
 }
@@ -442,14 +443,14 @@ body {
       display: inline-block;
       margin-top: 10px;
       font-size: 0.9em;
-      color: #0baf3c;
+      color: #d87925;
       text-decoration: none;
     }
     .login-form button {
       width: 100%;
       padding: 10px;
       margin-top: 15px;
-      background-color: #0baf3c;
+      background-color: #d87925;
       color: #fff;
       border: none;
       cursor: pointer;
@@ -460,7 +461,7 @@ body {
       margin-top: 15px;
     }
     .login-form p a {
-      color: #0baf3c;
+      color: #d87925;
       text-decoration: none;
     }
     .login-container {
@@ -548,12 +549,82 @@ body {
   background-color: #e3e6f2; /* cùng màu nền */
   padding: 20px;
 }
+.cart-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 80px;
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.cart-left {
+  flex: 2;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
 
+.cart-right {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
 
+.cart-items {
+  margin-top: 20px;
+}
 
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
 
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
 
+.item-details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
 
+.total-label {
+  font-size: 18px;
+  margin-top: 20px;
+}
 
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #d87925;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
